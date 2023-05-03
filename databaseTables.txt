@@ -1,0 +1,61 @@
+===============================================
+==> Creating DATABASES
+
+To create a database: *Capatalize SQL KEYWORDS*
+> CREATE DATABASE database_name;
+
+To List Available databases:
+> SHOW DATABASES;
+> show databases;
+
+To drop a database: *Careful(Delete)*
+> DROP DATABASE database_name;
+
+To use and work in a database:
+> USE database_name;
+
+To check Which database you are working in/on:
+> SELECT database();
+
+=================================================
+==> Creating TABLES - The true Heart of SQL
+
+CREATE TABLE cats
+    (
+        name VARCHAR(100),
+        age INT
+    );
+
+CREATE TABLE dogs (
+    name VARCHAR(50),
+    breed VARCHAR(50),
+    age INT
+);
+
+Find which TABLES exist from the Current database:
+> SHOW TABLES;
+
+Show the columns in the cats table:
+> SHOW COLUMNS FROM cats;
+
+A short-cut to this is DESC (describe):
+> DESC tableName;
+> DESC dogs;
+
+To drop a table: *Careful(Delete)*
+> DROP TABLE cats;
+
+Practice * This is the short-hand version
+mysql> CREATE TABLE pastries (name VARCHAR(50), quantity INT);
+
+SHOW TABLES;  = View the TABLES
+DESC pastries;  = View details of the pastries table
+DROP TABLE pastries;  = Deletes/Drops the table
+
+
+==================================================
+==> Inserting data
+
+
+
+
