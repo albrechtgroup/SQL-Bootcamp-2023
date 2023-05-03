@@ -56,6 +56,21 @@ DROP TABLE pastries;  = Deletes/Drops the table
 ==================================================
 ==> Inserting data
 
+Inserting (Order Matters*)
+> INSERT INTO cats (name, age);
+> VALUES ('Jetson', 7);
+
+> INSERT INTO cats(name, age) VALUES ('Jetson', 7);
+
+To view all rows in our table:
+> SELECT * FROM cats;
+
+Multiple Inserts:
+> INSERT INTO cats(name, age)
+> VALUES ('Charlie', 10),
+         ('Sadie', 3),
+         ('Lazy Bear', 7);
+
 
 
 
